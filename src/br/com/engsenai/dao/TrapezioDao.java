@@ -3,6 +3,7 @@ package br.com.engsenai.dao;
 import java.util.Scanner;
 
 import br.com.engsenai.model.Trapezio;
+import br.com.engsenai.ui.Menu;
 
 public class TrapezioDao {
 	
@@ -30,8 +31,8 @@ public class TrapezioDao {
 		
 		trapezio.mostrarDados();
 		
-		// Fechar o objeto scanner, remover da memória
-		leitor.close();
+		Menu.continuar(leitor);
+		
 		leitor2.close();
 		leitor3.close();
 		

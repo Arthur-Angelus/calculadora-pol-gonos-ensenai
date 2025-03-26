@@ -3,6 +3,7 @@ package br.com.engsenai.dao;
 import java.util.Scanner;
 
 import br.com.engsenai.model.Retangulo;
+import br.com.engsenai.ui.Menu;
 
 public class RetanguloDao {
 	
@@ -25,8 +26,8 @@ public class RetanguloDao {
 		
 		retangulo.mostrarDados();
 		
-		// Fechar o objeto scanner, remover da memória
-		leitor.close();
+		Menu.continuar(leitor);
+		
 		leitor2.close();
 		
 	}

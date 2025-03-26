@@ -3,6 +3,7 @@ package br.com.engsenai.dao;
 import java.util.Scanner;
 
 import br.com.engsenai.model.Circunferencia;
+import br.com.engsenai.ui.Menu;
 
 public class CircunferenciaDao {
 	
@@ -20,8 +21,7 @@ public class CircunferenciaDao {
 		
 		circunferencia.mostrarDados();
 		
-		// Fechar o objeto scanner, remover da memória
-		leitor.close();
+		Menu.continuar(leitor);
 		
 	}
 

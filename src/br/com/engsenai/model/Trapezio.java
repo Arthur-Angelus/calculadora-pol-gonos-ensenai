@@ -35,7 +35,7 @@ public class Trapezio {
 
 	}
 
-	public double calcularArea() {
+	private double calcularArea() {
 		double area = (baseMaior + baseMenor) * altura /2 ;
 		return area;
 	}

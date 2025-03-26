@@ -25,12 +25,12 @@ public class Retangulo {
 
 	}
 
-	public double calcularPerimetro() {
+	private double calcularPerimetro() {
 		double perimetro = (altura * 2) + (base * 2);
 		return perimetro;
 	}
 
-	public double calcularArea() {
+	private double calcularArea() {
 		double area = altura * base;
 		return area;
 	}

@@ -15,12 +15,12 @@ public class Quadrado {
 
 	}
 
-	public double calcularPerimetro() {
+	private double calcularPerimetro() {
 		double perimetro = lado * 4;
 		return perimetro;
 	}
 
-	public double calcularArea() {
+	private double calcularArea() {
 		double area = lado * lado;
 		return area;
 	}

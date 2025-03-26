@@ -9,9 +9,9 @@ import br.com.engsenai.dao.TrapezioDao;
 import br.com.engsenai.dao.TrianguloDao;
 
 public class Menu {
-	
+
 	public static void mostrarMenu() {
-		
+
 		System.out.println("--------------------------");
 		System.out.println("CALCULADORA DE POLÍGONOS");
 		System.out.println("--------------------------");
@@ -22,28 +22,40 @@ public class Menu {
 		System.out.println("5 - Triângulo");
 		System.out.println("--------------------------");
 		System.out.print("Escolha uma opção (1 - 5): ");
-		
+
 		Scanner leitor = new Scanner(System.in);
-		
+
 		int opcao = leitor.nextInt();
-		
+
 		if (opcao == 1) {
-			QuadradoDao.criarQuadrado();	
+			QuadradoDao.criarQuadrado();
 		} else if (opcao == 2) {
-			RetanguloDao.criarRetangulo();	
+			RetanguloDao.criarRetangulo();
 		} else if (opcao == 3) {
-			TrapezioDao.criarTrapezio();	
+			TrapezioDao.criarTrapezio();
 		} else if (opcao == 4) {
-			CircunferenciaDao.criarCircunferencia(); 
+			CircunferenciaDao.criarCircunferencia();
 		} else if (opcao == 5) {
-			TrianguloDao.criarTriangulo(); 
+			TrianguloDao.criarTriangulo();
 		} else {
 			System.out.println("Esta opção ainda não foi implementada, CPF CANCELADO!");
 		}
-		
+
 		leitor.close();
-		
+
 	}
-	
+
+	public static void continuar(Scanner leitor) {
+		String resposta = "";
+		
+		while (!resposta.equalsIgnoreCase("c") || !resposta.equalsIgnoreCase("s")) {
+			System.out.print("Digite C para continuar ou S para sair: ");
+			resposta = leitor.next();
+		}
+
+		if (resposta.equalsIgnoreCase("C")) {
+			Menu.mostrarMenu();
+		}
+	}
 
 }

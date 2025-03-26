@@ -14,7 +14,7 @@ public class Circunferencia {
 		}
 	}
 
-	public double calcularArea() {
+	private double calcularArea() {
 		double area = raio * raio * Math.PI ;
 		return area;
 	}
