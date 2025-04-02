@@ -6,9 +6,9 @@ public class Formas_Geometricas {
 
 	public static void main(String[] args) {
 
-//		Menu.mostrarMenu();
-//		
-//		System.out.println("ELIGEBETE!!! BISECSUAL!!! LIBANESE!!! MADUREIRA!!!");
+		Menu.mostrarMenu();
+		
+		System.out.println("ELIGEBETE!!! BISECSUAL!!! LIBANESE!!! MADUREIRA!!!");
 	}
 
 }
